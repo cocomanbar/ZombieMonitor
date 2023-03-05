@@ -1,0 +1,21 @@
+PODS:
+  - ZombieMonitor (1.0.0):
+    - ZombieMonitor/Core (= 1.0.0)
+    - ZombieMonitor/Non_arc_files (= 1.0.0)
+  - ZombieMonitor/Core (1.0.0)
+  - ZombieMonitor/Non_arc_files (1.0.0):
+    - ZombieMonitor/Core
+
+DEPENDENCIES:
+  - ZombieMonitor (from `../`)
+
+EXTERNAL SOURCES:
+  ZombieMonitor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZombieMonitor: d1fed634bed7051badd10ffd97e26c922b7ae668
+
+PODFILE CHECKSUM: 666f8661be9241a4abaeee12649fbc22e8693ece
+
+COCOAPODS: 1.11.3

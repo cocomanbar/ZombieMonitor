@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A017E08C648B38C0D7FE7427C89BEDB /* NSObject+ZombieMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D8223A111DAFEF39176A74C587B43379 /* NSObject+ZombieMonitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3416AC4B35A885848CD850E162B0DE08 /* ZombieForwardCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C4136BC1380608FD0B4421BB6A51FB /* ZombieForwardCache.m */; };
+		7691C7BC796707D6DCF0267339000288 /* NSObject+ZombieMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AE54FF9C17749F3469FE118D94ADBF /* NSObject+ZombieMonitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7A208B453C96C6753651E0A8AEC65962 /* ZombieForwardCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C95BB5051AF07FE44835E24374562870 /* ZombieForwardCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B883C1A2CFD2018B7632F4CDC9ED003 /* ZombieMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7AC88A53AF0BEDDEF8277E15BE7867 /* ZombieMonitor-dummy.m */; };
+		8CDF79B7F7508A2D65587D245C65F68E /* ZombieForwardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CC9A1E3A86276B32195D7025B560BE /* ZombieForwardObject.m */; };
+		9D88164623DBB3705205310483928209 /* Pods-ZombieMonitor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BADC9A2594ABED827D6FFAA4898EF71 /* Pods-ZombieMonitor_Example-dummy.m */; };
+		A6758F56BAF90DC3958C37B7BAA6B293 /* ZombieForwardObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DC187E854725010E2E9CE4E5EE98A8 /* ZombieForwardObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9EFA5D41AC3E05E16F4B1D75DFAAC9C /* Pods-ZombieMonitor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F546ACEF08505FA64DDCAC4713E099 /* Pods-ZombieMonitor_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6903B5D864650402D59C0974CA9BBB84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35FDC3763C6647F4771CB80E789585D;
+			remoteInfo = ZombieMonitor;
+		};
+		7049ACC90105B0F7EBA2F17182C4B5AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E706C9AA531B626793182EBD1786CEB;
+			remoteInfo = "Pods-ZombieMonitor_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063848DF1A59CBE655EABBD538D9B50B /* Pods-ZombieMonitor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZombieMonitor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12B9F6FBB6A61BDA89DD80CE07564D57 /* ZombieMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZombieMonitor.release.xcconfig; sourceTree = "<group>"; };
+		25A9793AECF0AF07EDB8F21D63B4B054 /* ZombieMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZombieMonitor.debug.xcconfig; sourceTree = "<group>"; };
+		2D04D27FCCF563390BEFF138105706F6 /* Pods-ZombieMonitor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZombieMonitor_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		349CE4847853DBE7F607768D0F9CFAF4 /* Pods-ZombieMonitor_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-ZombieMonitor_Example"; path = "libPods-ZombieMonitor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36903A8837EDDA2B3063DA0C6A02F62F /* Pods-ZombieMonitor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZombieMonitor_Example.release.xcconfig"; sourceTree = "<group>"; };
+		41DF90A6869961201020464C79C7BC7D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		41F546ACEF08505FA64DDCAC4713E099 /* Pods-ZombieMonitor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZombieMonitor_Tests-dummy.m"; sourceTree = "<group>"; };
+		4C6440A69E7DCF7A00B121938722065A /* ZombieMonitor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZombieMonitor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52217A383C82EE42EF9DDB726EAAAD2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		59F14277FF99B3387905627FE5469391 /* Pods-ZombieMonitor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZombieMonitor_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5B7FCD33E119511C5341B7044A35BA57 /* ZombieMonitor */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = ZombieMonitor; path = libZombieMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CC9A1E3A86276B32195D7025B560BE /* ZombieForwardObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZombieForwardObject.m; path = ZombieMonitor/Classes/Core/ZombieForwardObject.m; sourceTree = "<group>"; };
+		76DC187E854725010E2E9CE4E5EE98A8 /* ZombieForwardObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZombieForwardObject.h; path = ZombieMonitor/Classes/Core/ZombieForwardObject.h; sourceTree = "<group>"; };
+		80AE54FF9C17749F3469FE118D94ADBF /* NSObject+ZombieMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ZombieMonitor.m"; path = "ZombieMonitor/Classes/Non_arc_files/NSObject+ZombieMonitor.m"; sourceTree = "<group>"; };
+		80C4136BC1380608FD0B4421BB6A51FB /* ZombieForwardCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZombieForwardCache.m; path = ZombieMonitor/Classes/Core/ZombieForwardCache.m; sourceTree = "<group>"; };
+		8D18A1CA056CA69BDB1CB923051B87CE /* Pods-ZombieMonitor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZombieMonitor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9BADC9A2594ABED827D6FFAA4898EF71 /* Pods-ZombieMonitor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZombieMonitor_Example-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C91E757CB49F40663367392FD4FBC3B3 /* Pods-ZombieMonitor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZombieMonitor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C95BB5051AF07FE44835E24374562870 /* ZombieForwardCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZombieForwardCache.h; path = ZombieMonitor/Classes/Core/ZombieForwardCache.h; sourceTree = "<group>"; };
+		CC4A6CD3BFF963279B31AE066AF4321E /* Pods-ZombieMonitor_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-ZombieMonitor_Tests"; path = "libPods-ZombieMonitor_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE7FCF41F02C5E912C2759D1548890F /* Pods-ZombieMonitor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZombieMonitor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8223A111DAFEF39176A74C587B43379 /* NSObject+ZombieMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ZombieMonitor.h"; path = "ZombieMonitor/Classes/Non_arc_files/NSObject+ZombieMonitor.h"; sourceTree = "<group>"; };
+		DC7AC88A53AF0BEDDEF8277E15BE7867 /* ZombieMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZombieMonitor-dummy.m"; sourceTree = "<group>"; };
+		E55C599868C69A5EA4230E51908B57B9 /* Pods-ZombieMonitor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZombieMonitor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5DA14F069F795BFBAC7A2274E4F763A /* ZombieMonitor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZombieMonitor-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034F6A0C3B9975B98904F5EB7BC2A4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60CFD76AA9945222F82CFBDF07C38CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5938C6313F1A8BC4F523AE6FA5D182B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA0B8972AD1DEE80BFD0C98F086B5BB /* Pods-ZombieMonitor_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				063848DF1A59CBE655EABBD538D9B50B /* Pods-ZombieMonitor_Tests-acknowledgements.markdown */,
+				8D18A1CA056CA69BDB1CB923051B87CE /* Pods-ZombieMonitor_Tests-acknowledgements.plist */,
+				41F546ACEF08505FA64DDCAC4713E099 /* Pods-ZombieMonitor_Tests-dummy.m */,
+				E55C599868C69A5EA4230E51908B57B9 /* Pods-ZombieMonitor_Tests.debug.xcconfig */,
+				59F14277FF99B3387905627FE5469391 /* Pods-ZombieMonitor_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZombieMonitor_Tests";
+			path = "Target Support Files/Pods-ZombieMonitor_Tests";
+			sourceTree = "<group>";
+		};
+		3653614DA8CE435CEA452E70F9228DA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C95BB5051AF07FE44835E24374562870 /* ZombieForwardCache.h */,
+				80C4136BC1380608FD0B4421BB6A51FB /* ZombieForwardCache.m */,
+				76DC187E854725010E2E9CE4E5EE98A8 /* ZombieForwardObject.h */,
+				62CC9A1E3A86276B32195D7025B560BE /* ZombieForwardObject.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3CDC1D8AC847368468873D3E3F53D6B4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				52217A383C82EE42EF9DDB726EAAAD2A /* LICENSE */,
+				41DF90A6869961201020464C79C7BC7D /* README.md */,
+				4C6440A69E7DCF7A00B121938722065A /* ZombieMonitor.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4DB6EACBF873B380C179291638B3CEB9 /* Non_arc_files */ = {
+			isa = PBXGroup;
+			children = (
+				D8223A111DAFEF39176A74C587B43379 /* NSObject+ZombieMonitor.h */,
+				80AE54FF9C17749F3469FE118D94ADBF /* NSObject+ZombieMonitor.m */,
+			);
+			name = Non_arc_files;
+			sourceTree = "<group>";
+		};
+		7B61BF437A52ADE33FA697D9E592C1DA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1D393DBE49C2A90B9944676CCB7B73C /* ZombieMonitor */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9F5AE8D9445C90FDD9395315883C1212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349CE4847853DBE7F607768D0F9CFAF4 /* Pods-ZombieMonitor_Example */,
+				CC4A6CD3BFF963279B31AE066AF4321E /* Pods-ZombieMonitor_Tests */,
+				5B7FCD33E119511C5341B7044A35BA57 /* ZombieMonitor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD8A1A8D4F336A539FF16090AC0849A6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7C51775C190B3D31711F025146A762F /* Pods-ZombieMonitor_Example */,
+				0CA0B8972AD1DEE80BFD0C98F086B5BB /* Pods-ZombieMonitor_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C1D393DBE49C2A90B9944676CCB7B73C /* ZombieMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				3653614DA8CE435CEA452E70F9228DA8 /* Core */,
+				4DB6EACBF873B380C179291638B3CEB9 /* Non_arc_files */,
+				3CDC1D8AC847368468873D3E3F53D6B4 /* Pod */,
+				D158F811F904B3C99CBB43465337308B /* Support Files */,
+			);
+			name = ZombieMonitor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7B61BF437A52ADE33FA697D9E592C1DA /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9F5AE8D9445C90FDD9395315883C1212 /* Products */,
+				BD8A1A8D4F336A539FF16090AC0849A6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D158F811F904B3C99CBB43465337308B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7AC88A53AF0BEDDEF8277E15BE7867 /* ZombieMonitor-dummy.m */,
+				F5DA14F069F795BFBAC7A2274E4F763A /* ZombieMonitor-prefix.pch */,
+				25A9793AECF0AF07EDB8F21D63B4B054 /* ZombieMonitor.debug.xcconfig */,
+				12B9F6FBB6A61BDA89DD80CE07564D57 /* ZombieMonitor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZombieMonitor";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7C51775C190B3D31711F025146A762F /* Pods-ZombieMonitor_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CCE7FCF41F02C5E912C2759D1548890F /* Pods-ZombieMonitor_Example-acknowledgements.markdown */,
+				C91E757CB49F40663367392FD4FBC3B3 /* Pods-ZombieMonitor_Example-acknowledgements.plist */,
+				9BADC9A2594ABED827D6FFAA4898EF71 /* Pods-ZombieMonitor_Example-dummy.m */,
+				2D04D27FCCF563390BEFF138105706F6 /* Pods-ZombieMonitor_Example.debug.xcconfig */,
+				36903A8837EDDA2B3063DA0C6A02F62F /* Pods-ZombieMonitor_Example.release.xcconfig */,
+			);
+			name = "Pods-ZombieMonitor_Example";
+			path = "Target Support Files/Pods-ZombieMonitor_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EE286DB86FE60680524E11EA9CE1FDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48A74741DECF9FC4E1C187776E2BBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F7087B488B46CEC0312EA61064CBA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A017E08C648B38C0D7FE7427C89BEDB /* NSObject+ZombieMonitor.h in Headers */,
+				7A208B453C96C6753651E0A8AEC65962 /* ZombieForwardCache.h in Headers */,
+				A6758F56BAF90DC3958C37B7BAA6B293 /* ZombieForwardObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E706C9AA531B626793182EBD1786CEB /* Pods-ZombieMonitor_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB7E20376561BF76668C17757924B80 /* Build configuration list for PBXNativeTarget "Pods-ZombieMonitor_Example" */;
+			buildPhases = (
+				8F48A74741DECF9FC4E1C187776E2BBD /* Headers */,
+				0847AF720715342C3CFAAFA03D865B83 /* Sources */,
+				E5938C6313F1A8BC4F523AE6FA5D182B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC37BA56CB270E3D2EB6D55968A8961E /* PBXTargetDependency */,
+			);
+			name = "Pods-ZombieMonitor_Example";
+			productName = "Pods-ZombieMonitor_Example";
+			productReference = 349CE4847853DBE7F607768D0F9CFAF4 /* Pods-ZombieMonitor_Example */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63D38E6224CDD72DD3803776713503B8 /* Pods-ZombieMonitor_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 699A482D5B6CC5A3A74149D9D1EB04D3 /* Build configuration list for PBXNativeTarget "Pods-ZombieMonitor_Tests" */;
+			buildPhases = (
+				1EE286DB86FE60680524E11EA9CE1FDF /* Headers */,
+				86419C7C691EE52360F45FFAE4A6C97B /* Sources */,
+				60CFD76AA9945222F82CFBDF07C38CDA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A962B07974B4858FA896B2E7E31C1D7F /* PBXTargetDependency */,
+			);
+			name = "Pods-ZombieMonitor_Tests";
+			productName = "Pods-ZombieMonitor_Tests";
+			productReference = CC4A6CD3BFF963279B31AE066AF4321E /* Pods-ZombieMonitor_Tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B35FDC3763C6647F4771CB80E789585D /* ZombieMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B566B3DDC90D5CCD274B5C338A794E85 /* Build configuration list for PBXNativeTarget "ZombieMonitor" */;
+			buildPhases = (
+				E5F7087B488B46CEC0312EA61064CBA0 /* Headers */,
+				534EEC14B573E402865480737963DFBE /* Sources */,
+				034F6A0C3B9975B98904F5EB7BC2A4BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieMonitor;
+			productName = ZombieMonitor;
+			productReference = 5B7FCD33E119511C5341B7044A35BA57 /* ZombieMonitor */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9F5AE8D9445C90FDD9395315883C1212 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E706C9AA531B626793182EBD1786CEB /* Pods-ZombieMonitor_Example */,
+				63D38E6224CDD72DD3803776713503B8 /* Pods-ZombieMonitor_Tests */,
+				B35FDC3763C6647F4771CB80E789585D /* ZombieMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0847AF720715342C3CFAAFA03D865B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D88164623DBB3705205310483928209 /* Pods-ZombieMonitor_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534EEC14B573E402865480737963DFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7691C7BC796707D6DCF0267339000288 /* NSObject+ZombieMonitor.m in Sources */,
+				3416AC4B35A885848CD850E162B0DE08 /* ZombieForwardCache.m in Sources */,
+				8CDF79B7F7508A2D65587D245C65F68E /* ZombieForwardObject.m in Sources */,
+				8B883C1A2CFD2018B7632F4CDC9ED003 /* ZombieMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86419C7C691EE52360F45FFAE4A6C97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EFA5D41AC3E05E16F4B1D75DFAAC9C /* Pods-ZombieMonitor_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A962B07974B4858FA896B2E7E31C1D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZombieMonitor_Example";
+			target = 5E706C9AA531B626793182EBD1786CEB /* Pods-ZombieMonitor_Example */;
+			targetProxy = 7049ACC90105B0F7EBA2F17182C4B5AA /* PBXContainerItemProxy */;
+		};
+		AC37BA56CB270E3D2EB6D55968A8961E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZombieMonitor;
+			target = B35FDC3763C6647F4771CB80E789585D /* ZombieMonitor */;
+			targetProxy = 6903B5D864650402D59C0974CA9BBB84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		149828087C49D33E8C005AB0631D783F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55C599868C69A5EA4230E51908B57B9 /* Pods-ZombieMonitor_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EA5014281A2A23C1CB9CD82D20921F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B9F6FBB6A61BDA89DD80CE07564D57 /* ZombieMonitor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZombieMonitor/ZombieMonitor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZombieMonitor;
+				PRODUCT_NAME = ZombieMonitor;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74FD6865EE7BD470427F4001D93ACD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D04D27FCCF563390BEFF138105706F6 /* Pods-ZombieMonitor_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77FCC86E771FA01D4A0BADD1BB0A4550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F14277FF99B3387905627FE5469391 /* Pods-ZombieMonitor_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E0E7BD0175F737AF98FDF531EF2394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36903A8837EDDA2B3063DA0C6A02F62F /* Pods-ZombieMonitor_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C31E617F2239BC7886BA37FB487B5902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A9793AECF0AF07EDB8F21D63B4B054 /* ZombieMonitor.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZombieMonitor/ZombieMonitor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZombieMonitor;
+				PRODUCT_NAME = ZombieMonitor;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		699A482D5B6CC5A3A74149D9D1EB04D3 /* Build configuration list for PBXNativeTarget "Pods-ZombieMonitor_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149828087C49D33E8C005AB0631D783F /* Debug */,
+				77FCC86E771FA01D4A0BADD1BB0A4550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB7E20376561BF76668C17757924B80 /* Build configuration list for PBXNativeTarget "Pods-ZombieMonitor_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FD6865EE7BD470427F4001D93ACD3B /* Debug */,
+				79E0E7BD0175F737AF98FDF531EF2394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B566B3DDC90D5CCD274B5C338A794E85 /* Build configuration list for PBXNativeTarget "ZombieMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31E617F2239BC7886BA37FB487B5902 /* Debug */,
+				1EA5014281A2A23C1CB9CD82D20921F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

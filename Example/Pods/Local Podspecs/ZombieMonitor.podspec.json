@@ -1,0 +1,38 @@
+{
+  "name": "ZombieMonitor",
+  "version": "1.0.0",
+  "summary": "Zombie Monitor",
+  "description": "In the development stage, discover zombie objects that may appear in the program as early as possible",
+  "homepage": "https://github.com/cocomanbar/ZombieMonitor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cocomanbar": "125322078@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/cocomanbar/ZombieMonitor.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "subspecs": [
+    {
+      "name": "Non_arc_files",
+      "source_files": "ZombieMonitor/Classes/Non_arc_files/*.{h,m}",
+      "requires_arc": false,
+      "dependencies": {
+        "ZombieMonitor/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Core",
+      "source_files": "ZombieMonitor/Classes/Core/*",
+      "requires_arc": true
+    }
+  ]
+}
